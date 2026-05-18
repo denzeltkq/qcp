@@ -1,0 +1,3 @@
+timestamp,instrument,side,qty,price,realized_pnl
+2025-12-15 00:00:05+00:00,deribit-BTC-30JAN26-future,buy,1.0,88642.5,0.0
+2025-12-15 00:00:05+00:00,deribit-BTC-30JAN26-90000-C-option,sell,1.0,4960.13,0.0

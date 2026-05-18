@@ -1,0 +1,52 @@
+Phase 0 Observations
+============================================================
+
+BLOCKERS:
+  [STEP 2] [BLOCKER] quotes_l1_5s median diff=10s, expected 5s
+  [STEP 3] [BLOCKER] Expected instrument not found anywhere: deribit-BTC-70000-20260130-C-option
+  [STEP 3] [BLOCKER] Expected instrument not found anywhere: deribit-BTC-70000-20260130-P-option
+  [STEP 3] [BLOCKER] Expected instrument not found anywhere: deribit-BTC-80000-20260130-C-option
+  [STEP 3] [BLOCKER] Expected instrument not found anywhere: deribit-BTC-80000-20260130-P-option
+  [STEP 3] [BLOCKER] Expected instrument not found anywhere: deribit-BTC-90000-20260130-C-option
+  [STEP 3] [BLOCKER] Expected instrument not found anywhere: deribit-BTC-90000-20260130-P-option
+  [STEP 3] [BLOCKER] Expected instrument not found anywhere: deribit-BTC-100000-20260130-C-option
+  [STEP 3] [BLOCKER] Expected instrument not found anywhere: deribit-BTC-100000-20260130-P-option
+  [STEP 3] [BLOCKER] Expected instrument not found anywhere: deribit-BTC-110000-20260130-C-option
+  [STEP 3] [BLOCKER] Expected instrument not found anywhere: deribit-BTC-110000-20260130-P-option
+
+NOTES:
+  [STEP 4] [NOTE] deribit-BTC-30JAN26-70000-C-option: 86.6% missing, max gap 0.5h
+  [STEP 4] [NOTE] deribit-BTC-30JAN26-100000-P-option: 86.3% missing, max gap 0.5h
+  [STEP 4] [NOTE] deribit-BTC-30JAN26-80000-C-option: 86.2% missing, max gap 0.5h
+  [STEP 4] [NOTE] deribit-BTC-30JAN26-110000-P-option: 85.8% missing, max gap 0.5h
+  [STEP 4] [NOTE] deribit-BTC-30JAN26-70000-P-option: 73.2% missing, max gap 0.4h
+  [STEP 4] [NOTE] deribit-BTC-30JAN26-110000-C-option: 72.2% missing, max gap 0.4h
+  [STEP 4] [NOTE] deribit-BTC-30JAN26-100000-C-option: 71.8% missing, max gap 0.4h
+  [STEP 4] [NOTE] deribit-BTC-30JAN26-80000-P-option: 70.5% missing, max gap 0.4h
+  [STEP 4] [NOTE] deribit-BTC-30JAN26-90000-P-option: 70.0% missing, max gap 0.5h
+  [STEP 4] [NOTE] deribit-BTC-30JAN26-90000-C-option: 68.1% missing, max gap 0.4h
+  [STEP 4] [NOTE] deribit-BTC-30JAN26-future: 58.4% missing, max gap 0.4h
+  [STEP 4] [NOTE] deribit-BTC-PERPETUAL-future: 50.1% missing, max gap 0.4h
+  [STEP 8] [NOTE] Max parity deviation = 27.70% of F — investigate if systematic
+  [STEP 8] [NOTE] 4 parity band breaches (lower > 0) — likely spread artefact, not real arb
+
+GOOD:
+  [STEP 1] [GOOD] quotes_l1_5s: 942,605 rows × 6 cols
+  [STEP 1] [GOOD] candles_1m: 293,760 rows × 10 cols
+  [STEP 1] [GOOD] quotes_l1_5s.time dtype: datetime64[ns, UTC]
+  [STEP 1] [GOOD] candles_1m.time dtype: datetime64[ns, UTC]
+  [STEP 2] [GOOD] candles_1m median diff=60s ✓
+  [STEP 3] [GOOD] instruments.parquet contains exactly 12 symbols
+  [STEP 3] [GOOD] strikes = [70K,80K,90K,100K,110K] ✓
+  [STEP 3] [GOOD] all options are European ✓
+  [STEP 6] [GOOD] Forward mid range: $84,805 – $90,994 ✓
+  [STEP 7] [GOOD] deribit-BTC-30JAN26-100000-C-option: median relative spread = 5.3% ✓
+  [STEP 7] [GOOD] deribit-BTC-30JAN26-100000-P-option: median relative spread = 3.3% ✓
+  [STEP 7] [GOOD] deribit-BTC-30JAN26-110000-C-option: median relative spread = 8.0% ✓
+  [STEP 7] [GOOD] deribit-BTC-30JAN26-110000-P-option: median relative spread = 2.1% ✓
+  [STEP 7] [GOOD] deribit-BTC-30JAN26-70000-C-option: median relative spread = 1.2% ✓
+  [STEP 7] [GOOD] deribit-BTC-30JAN26-70000-P-option: median relative spread = 6.9% ✓
+  [STEP 7] [GOOD] deribit-BTC-30JAN26-80000-C-option: median relative spread = 2.2% ✓
+  [STEP 7] [GOOD] deribit-BTC-30JAN26-80000-P-option: median relative spread = 3.0% ✓
+  [STEP 7] [GOOD] deribit-BTC-30JAN26-90000-C-option: median relative spread = 2.0% ✓
+  [STEP 7] [GOOD] deribit-BTC-30JAN26-90000-P-option: median relative spread = 1.6% ✓

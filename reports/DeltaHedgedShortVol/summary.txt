@@ -1,0 +1,62 @@
+Strategy:       DeltaHedgedShortVol
+Total PnL:      $      539.16
+  Realized:     $     -849.51
+  Unrealized:   $    1,388.67
+Cash:           $  -34,624.63
+Final NAV:      $  -33,235.96
+Num Trades:     25
+Hit Rate:       0.0%   (closing trades with PnL > 0)
+Max Drawdown:   $      655.04
+Sharpe (ann.):  0.27367760343479547     (16 daily samples)
+
+PnL Attribution (cumulative):
+  Delta PnL:   $     -229.54
+  Vega PnL:    $      554.19
+  Theta PnL:   $    1,052.75
+  Residual:    $     -768.81
+  ─────────────────────────────────────
+  Explained:   255.5% of total PnL
+
+Scenario Analysis (entry positions, instantaneous shock):
+Entry F:  $ 88,642.50    Entry IV: 44.8%    T: 46.3 days
+ F shock  IV shock    Portfolio ΔValue   vs Actual PnL
+────────────────────────────────────────────────────────
+    -20%    -10pts       $   -3,792.26           below
+    -20%     -5pts       $   -3,905.77           below
+    -20%     +0pts       $   -4,067.76           below
+    -20%     +5pts       $   -4,275.62           below
+    -20%    +10pts       $   -4,524.79           below
+    -10%    -10pts       $     -251.74           below
+    -10%     -5pts       $     -649.29           below
+    -10%     +0pts       $   -1,084.86           below
+    -10%     +5pts       $   -1,549.02           below
+    -10%    +10pts       $   -2,035.02           below
+     -5%    -10pts       $      834.18           above
+     -5%     -5pts       $      289.91           below
+     -5%     +0pts       $     -269.46           below
+     -5%     +5pts       $     -839.50           below
+     -5%    +10pts       $   -1,417.24           below
+     +0%    -10pts       $    1,258.56           above
+     +0%     -5pts       $      629.54           above
+     +0%     +0pts       $        0.00            base
+     +0%     +5pts       $     -629.74           below
+     +0%    +10pts       $   -1,259.45           below
+     +5%    -10pts       $      980.73           above
+     +5%     -5pts       $      352.41           below
+     +5%     +0pts       $     -280.02           below
+     +5%     +5pts       $     -915.16           below
+     +5%    +10pts       $   -1,552.12           below
+    +10%    -10pts       $       66.31           below
+    +10%     -5pts       $     -487.06           below
+    +10%     +0pts       $   -1,063.02           below
+    +10%     +5pts       $   -1,655.17           below
+    +10%    +10pts       $   -2,259.21           below
+    +20%    -10pts       $   -3,121.95           below
+    +20%     -5pts       $   -3,436.05           below
+    +20%     +0pts       $   -3,810.43           below
+    +20%     +5pts       $   -4,233.66           below
+    +20%    +10pts       $   -4,696.27           below
+
+Actual Dec 31 PnL: $      539.16
+Scenario range:    $   -4,696.27 to $    1,258.56
+Outcome:           INSIDE scenario envelope

@@ -1,0 +1,15 @@
+per_symbol:
+  deribit-BTC-PERPETUAL-future:
+    max_pos: 50
+    max_order_qty: 20
+  deribit-BTC-30JAN26-future:
+    max_pos: 50
+    max_order_qty: 20
+  "deribit-BTC-30JAN26-*-option":   # wildcard match for any option in the chain
+    max_pos: 30
+    max_order_qty: 10
+
+portfolio:
+  max_gross_notional: 500_000
+  max_daily_loss: -10_000
+  kill_switch: false

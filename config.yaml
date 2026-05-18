@@ -1,0 +1,15 @@
+backtest:
+  start: "2025-12-15"
+  end:   "2025-12-31"
+  data_path: "takehome_data"
+  output_dir: "reports"
+
+risk_free_rate: 0.0
+
+strategies:
+  covered_call:
+    enabled: true
+  delta_hedged_short_vol:
+    enabled: true
+    option_instrument: "deribit-BTC-30JAN26-90000-C-option"
+    delta_threshold: 0.05
